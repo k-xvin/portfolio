@@ -1,23 +1,26 @@
 <template>
-    <div class="mt-2">
-        <div class="neon text-center">🦀CRABB.CLUB🦀</div>
-    </div>
+    <v-row align="center" justify="center" class="mt-2">
+        <v-col class="text-center">
+            <p class="title">CRABB.CLUB</p>
+        </v-col>
+    </v-row>
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+
+        }
+    },
+};
 </script>
 
 <style scoped>
-.neon {
-    font-size: 80px;
+.title {
+    font-size: 6vw;
     color: #fff;
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-            0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6,
-            0 0 80px #ff4da6;
-    /*background: aqua;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);*/
-    
+    text-shadow: 0 0 0.8vw #fff, 0 0 1.6vw #ff4da6, 0 0 1.2vw #ff4da6,
+        0 0 1.4vw #ff4da6, 0 0 1.6vw #ff4da6, 0 0 1.8vw #ff4da6, 0 0 2vw #ff4da6;
 }
-
 </style>
