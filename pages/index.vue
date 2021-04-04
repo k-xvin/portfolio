@@ -1,7 +1,7 @@
 <template>
     <v-row align="center" justify="center" class="mt-2">
         <v-col class="text-center">
-            <p class="title">CRABB.CLUB</p>
+            <p class="crabb">CRABB.CLUB</p>
         </v-col>
     </v-row>
 </template>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.title {
+.crabb {
     font-size: 6vw;
     color: #fff;
     text-shadow: 0 0 0.8vw #fff, 0 0 1.6vw #ff4da6, 0 0 1.2vw #ff4da6,
