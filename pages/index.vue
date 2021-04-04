@@ -1,7 +1,12 @@
-<template>
+<template >
     <v-row align="center" justify="center" class="mt-2">
         <v-col class="text-center">
-            <p class="crabb">CRABB.CLUB</p>
+            <p class="neon">CRABB.CLUB</p>
+            <v-row>
+                <info-card></info-card>
+                <info-card></info-card>
+                <info-card></info-card>
+            </v-row>
         </v-col>
     </v-row>
 </template>
@@ -17,10 +22,12 @@ export default {
 </script>
 
 <style scoped>
-.crabb {
+.neon {
     font-size: 6vw;
     color: #fff;
     text-shadow: 0 0 0.8vw #fff, 0 0 1.6vw #ff4da6, 0 0 1.2vw #ff4da6,
         0 0 1.4vw #ff4da6, 0 0 1.6vw #ff4da6, 0 0 1.8vw #ff4da6, 0 0 2vw #ff4da6;
 }
+
+
 </style>
