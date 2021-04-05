@@ -16,10 +16,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #app {
     background: url("/beach2_compress.jpg");
     background-position: center center;
+    overflow: hidden;
 }
 
 #main { // get everything else above the scanlines

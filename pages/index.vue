@@ -4,8 +4,6 @@
             <p class="neon">CRABB.CLUB</p>
             <v-row>
                 <info-card></info-card>
-                <info-card></info-card>
-                <info-card></info-card>
             </v-row>
         </v-col>
     </v-row>
