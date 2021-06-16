@@ -23,7 +23,8 @@ export default {
     overflow: hidden;
 }
 
-#main { // get everything else above the scanlines
+#main {
+    // get everything else above the scanlines
     z-index: 10;
 }
 
