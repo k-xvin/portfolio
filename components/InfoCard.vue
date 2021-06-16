@@ -1,7 +1,12 @@
 <template>
-    <v-card elevation="2" width="300px" class="floating ma-2">
+    <v-card
+        elevation="2"
+        width="300px"
+        class="floating ma-2"
+        @click="link"
+    >
         <v-img :src="img">
-            <v-card-title class="tint"> {{ title }} </v-card-title>
+            <h3 class="title">{{ title }}</h3>
             <v-card-subtitle> {{ desc }} </v-card-subtitle>
         </v-img>
     </v-card>
@@ -10,20 +15,25 @@
 <script>
 export default {
     props: {
-        title: { default: "title", type: String },
+        title: { default: "Title of Piece", type: String },
         desc: { default: "", type: String },
-        img: { default: "https://cdn.discordapp.com/attachments/313820457256353794/853790365643702272/noisefield.gif", type: String },
-        link: { default: "desc", type: String },
+        img: {
+            default:
+                "https://cdn.discordapp.com/attachments/313820457256353794/853790365643702272/noisefield.gif",
+            type: String,
+        },
+        link: { default: "https://github.com/pisslake", type: String },
     },
     data() {
         return {};
     },
+    method: {},
 };
 </script>
 
 <style scoped>
-
-.tint{
+.title {
+    padding-left: 1vw;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
