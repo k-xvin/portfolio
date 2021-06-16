@@ -4,7 +4,7 @@
             <v-col>
                 <p class="neon">CRABB.CLUB</p>
                 <v-row class="mt-5">
-                    <div v-for="(item, index) in info">
+                    <div v-for="(item, index) in info" :key="index">
                         <info-card
                         :title="item.title"
                         :img="item.image"

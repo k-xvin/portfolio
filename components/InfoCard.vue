@@ -1,14 +1,14 @@
 <template>
     <v-card
         elevation="2"
-        width="300px"
+        width="350px"
         class="floating ma-2"
         :href="link"
         target="_blank"
     >
         <v-img :src="img" lazy-src="https://picsum.photos/id/11/10/6">
-            <h3 class="title">{{ title }}</h3>
-            <v-card-subtitle> {{ desc }} </v-card-subtitle>
+            <!-- <h3 class="title">{{ title }}</h3>
+            <v-card-subtitle> {{ desc }} </v-card-subtitle> -->
         </v-img>
     </v-card>
 </template>
