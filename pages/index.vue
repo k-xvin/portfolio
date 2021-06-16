@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import cards from "../static/cards.json";
+import cards from "../info/cards.json";
 
 export default {
     data() {
