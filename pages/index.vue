@@ -4,10 +4,13 @@
             <v-col>
                 <p class="neon">CRABB.CLUB</p>
                 <v-row class="mt-5">
-                    <info-card></info-card>
-                    <info-card></info-card>
-                    <info-card></info-card>
-                    <info-card></info-card>
+                    <div v-for="(item, index) in info">
+                        <info-card
+                        :title="item.title"
+                        :img="item.image"
+                        :link="item.link"
+                        > </info-card>
+                    </div>
                 </v-row>
             </v-col>
         </v-row>
@@ -15,9 +18,13 @@
 </template>
 
 <script>
+import cards from "../static/cards.json";
+
 export default {
     data() {
-        return {};
+        return {
+            info: cards.main,
+        };
     },
 };
 </script>

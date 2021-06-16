@@ -3,9 +3,10 @@
         elevation="2"
         width="300px"
         class="floating ma-2"
-        @click="link"
+        :href="link"
+        target="_blank"
     >
-        <v-img :src="img">
+        <v-img :src="img" lazy-src="https://picsum.photos/id/11/10/6">
             <h3 class="title">{{ title }}</h3>
             <v-card-subtitle> {{ desc }} </v-card-subtitle>
         </v-img>
