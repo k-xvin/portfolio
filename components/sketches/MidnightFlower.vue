@@ -119,9 +119,13 @@ export default {
                 let width = widthSlider.value();
                 let layers = layersSlider.value();
 
-                p.background(palette[0]);
+               
+                // dynamic resizing here
+                canvasWidth = document.getElementById("canvas").clientWidth;
+                canvasHeight = 800;
+                p.resizeCanvas(canvasWidth, canvasHeight);
 
-                //p.translate(p.windowWidth / 2, p.windowHeight / 2);
+                p.background(palette[0]);
                 p.translate(canvasWidth / 2, canvasHeight / 2);
 
                 p.textSize(24);
