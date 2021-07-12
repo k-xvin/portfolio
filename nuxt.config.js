@@ -17,7 +17,7 @@ export default {
       { hid: 'description', name: 'description', content: 'really cool stuff here i swear' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/crab.ico' }
     ]
   },
 
