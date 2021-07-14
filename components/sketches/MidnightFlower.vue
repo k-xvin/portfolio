@@ -1,5 +1,7 @@
 <template>
-    <div id="canvas"></div>
+    <v-card class="ma-5">
+        <div style="height: 85vh" id="canvas"></div>
+    </v-card>
 </template>
 
 <script>
@@ -35,7 +37,7 @@ export default {
             let default_rotateCheck = false;
 
             let canvasWidth = document.getElementById("canvas").clientWidth;
-            let canvasHeight = 800; //document.getElementById("canvas").clientHeight;
+            let canvasHeight = document.getElementById("canvas").clientHeight;
             //let height = document.getElementById("canvas").clientHeight;
             p.setup = function () {
                 //p.createCanvas(p.windowWidth, p.windowHeight);
@@ -119,10 +121,9 @@ export default {
                 let width = widthSlider.value();
                 let layers = layersSlider.value();
 
-               
                 // dynamic resizing here
                 canvasWidth = document.getElementById("canvas").clientWidth;
-                canvasHeight = 800;
+                canvasHeight = document.getElementById("canvas").clientHeight;
                 p.resizeCanvas(canvasWidth, canvasHeight);
 
                 p.background(palette[0]);

@@ -1,5 +1,7 @@
 <template>
-    <div id="canvas"></div>
+    <v-card class="ma-5">
+        <div style="height: 85vh" id="canvas"></div>
+    </v-card>
 </template>
 
 <script>
@@ -19,7 +21,7 @@ export default {
             let ampSlider;
 
             let canvasWidth = document.getElementById("canvas").clientWidth;
-            let canvasHeight = 800;
+            let canvasHeight = document.getElementById("canvas").clientHeight;
             p.setup = function () {
                 //p.createCanvas(p.windowWidth, p.windowHeight);
                 //p.createCanvas(900, 900);
@@ -27,8 +29,8 @@ export default {
 
                 p.background(bgColor);
 
-                cx = p.width / 2;
-                cy = p.height / 2;
+                cx = canvasWidth / 2;
+                cy = canvasHeight / 2;
 
                 // make some sliders
                 radSlider = p.createSlider(0, 500, 400, 1);
@@ -53,6 +55,12 @@ export default {
             };
 
             p.draw = function () {
+                canvasWidth = document.getElementById("canvas").clientWidth;
+                canvasHeight = document.getElementById("canvas").clientHeight;
+                cx = canvasWidth / 2;
+                cy = canvasHeight / 2;
+                p.resizeCanvas(canvasWidth, canvasHeight);
+
                 p.background(bgColor);
                 let color = p.color(palette /*.colors*/[0]);
                 color.setAlpha(70);

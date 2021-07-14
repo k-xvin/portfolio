@@ -1,0 +1,52 @@
+{
+    "main": [
+        {
+            "title": "Perlin Noisefield",
+            "description": "A perlin noisefield represented with some nice colors",
+            "link": "https://github.com/pisslake",
+            "image": "https://cdn.discordapp.com/attachments/313820457256353794/853790365643702272/noisefield.gif"
+        },
+        {
+            "title": "Perlin Cave",
+            "description": "",
+            "link": "https://github.com/pisslake",
+            "image": "https://cdn.discordapp.com/attachments/313820457256353794/853789056541917244/perlincave.gif"
+        },
+        {
+            "title": "Perlin Wave",
+            "description": "",
+            "link": "https://github.com/pisslake",
+            "image": "https://cdn.discordapp.com/attachments/313820457256353794/854844951556259840/perlinwave.gif"
+        },
+        {
+            "title": "Rectangles",
+            "description": "",
+            "link": "https://github.com/pisslake",
+            "image": "https://cdn.discordapp.com/attachments/313820457256353794/854843948162088980/rectangles.gif"
+        },
+        {
+            "title": "Triangles2",
+            "description": "",
+            "link": "https://github.com/pisslake",
+            "image": "https://cdn.discordapp.com/attachments/313820457256353794/854845428441022464/triangles2.gif"
+        },
+        {
+            "title": "Ribbon",
+            "description": "",
+            "link": "https://github.com/pisslake",
+            "image": "https://cdn.discordapp.com/attachments/313820457256353794/854846319508455474/ribbon.gif"
+        },
+        {
+            "title": "Sin Circle",
+            "description": "",
+            "link": "/art/sincircle",
+            "image": "https://cdn.discordapp.com/attachments/668689406617583646/864728008036319242/sincircle.gif"
+        },
+        {
+            "title": "Midnight Flower",
+            "description": "",
+            "link": "/secret",
+            "image": "https://cdn.discordapp.com/attachments/668689406617583646/864728008036319242/sincircle.gif"
+        }
+    ]
+}

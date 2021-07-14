@@ -1,9 +1,5 @@
 <template>
-    <div>
-        <v-card height="800px" class="ma-10">
-            <sin-circle></sin-circle>
-        </v-card>
-    </div>
+    <sin-circle></sin-circle>
 </template>
 
 <script>

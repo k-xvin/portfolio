@@ -1,7 +1,7 @@
 <template>
     <v-card
         elevation="2"
-        width="350px"
+        width="325px"
         class="floating ma-2"
         :href="link"
         target="_blank"
