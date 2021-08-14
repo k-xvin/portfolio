@@ -38,9 +38,8 @@ export default {
                 p.fill(palette[1]);
                 p.strokeWeight(4);
                 p.stroke(palette[4]);
-                p.textSize(32);
                 let msgPosition = 0;
-                let message = "happybirthdayjeremyhavefunreadingthis:)";
+                let message = "happybirthdayjeremyhavefunreadingthis :)))) ";
 
                 for (let x = 0; x < p.floor(canvasWidth / 150); x++) {
                     //polygon(x, x, 200, 8);
@@ -53,22 +52,26 @@ export default {
                             y != p.floor(canvasHeight / 150 - 1)
                         ) {
                             stackedPoly(baseX, baseY + 75, 50, 8, y % 4);
-                            p.push();
-                            p.stroke(0);
-                            p.text(message[msgPosition], baseX, baseY + 75);
-                            p.pop();
-                            msgPosition++;
+                            drawLetter(message[msgPosition], baseX, baseY + 75);
+                            if (msgPosition != message.length - 1)
+                                msgPosition++;
                         } else if (x % 2 === 0) {
                             stackedPoly(baseX, baseY, 50, 8, y % 4);
-                            p.push();
-                            p.stroke(0);
-                            p.text(message[msgPosition], baseX, baseY);
-                            p.pop();
-                            msgPosition++;
+                            drawLetter(message[msgPosition], baseX, baseY);
+                            if (msgPosition != message.length - 1)
+                                msgPosition++;
                         }
                     }
                 }
             };
+
+            function drawLetter(letter, x, y) {
+                p.push();
+                p.textSize(40);
+                p.stroke(0);
+                p.text(letter, x+p.random(3), y+p.random(3));
+                p.pop();
+            }
 
             function stackedPoly(x, y, radius, npoints, direction) {
                 for (let i = 0; i < 10; i++) {
