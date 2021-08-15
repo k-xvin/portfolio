@@ -1,5 +1,8 @@
 <template>
-    <octagon></octagon>
+    <div>
+        <octagon> </octagon>
+        <audio controls src="/track7.mp3" autoplay loop></audio>
+    </div>
 </template>
 
 <script>
