@@ -1,19 +1,16 @@
 <template>
-    <div>
-        <v-row align="center" justify="center" class="mt-2">
-            <v-col>
-                <v-row class="mt-5">
-                    <div v-for="(item, index) in info" :key="index">
-                        <info-card
-                        :title="item.title"
-                        :img="item.image"
-                        :link="item.link"
-                        > </info-card>
-                    </div>
-                </v-row>
-            </v-col>
+    <v-container class="mt-4" fluid>
+        <v-row no-gutters justify="center">
+            <info-card
+                v-for="(item, index) in info"
+                :key="index"
+                :title="item.title"
+                :img="item.image"
+                :link="item.link"
+            >
+            </info-card>
         </v-row>
-    </div>
+    </v-container>
 </template>
 
 <script>
@@ -29,5 +26,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

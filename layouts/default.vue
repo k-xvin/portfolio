@@ -1,7 +1,7 @@
 <template>
     <v-app dark class="scanlines">
         <v-main id="main">
-            <v-app-bar dense dark>
+            <v-app-bar dense color="rgb(155, 255, 255, 0.5)">
                 <a href="/" style="text-decoration: none">
                     <p class="neon my-auto">CRABB.CLUB</p>
                 </a>
@@ -11,7 +11,7 @@
                 </v-btn>
             </v-app-bar>
             <v-overlay dark :value="overlay"> :) </v-overlay>
-            <v-container>
+            <v-container fluid>
                 <nuxt />
             </v-container>
         </v-main>
@@ -37,6 +37,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .neon {
     font-size: x-large;
     color: #fff;
@@ -45,7 +46,8 @@ export default {
 
 #app {
     background: url("/beach2_compress.jpg");
-    background-position: center center;
+    background-position: center top;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 

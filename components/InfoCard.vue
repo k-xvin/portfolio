@@ -1,12 +1,14 @@
 <template>
     <v-card
         elevation="2"
-        width="325px"
+        :width=200
+        :height=200
         class="floating ma-2"
+        tile
         :href="link"
         target="_blank"
     >
-        <v-img :src="img" lazy-src="https://picsum.photos/id/11/10/6">
+        <v-img :src="img" lazy-src="" min-width=200 min-height=200>
             <!-- <h3 class="title">{{ title }}</h3>
             <v-card-subtitle> {{ desc }} </v-card-subtitle> -->
         </v-img>
@@ -24,6 +26,10 @@ export default {
             type: String,
         },
         link: { default: "https://github.com/pisslake", type: String },
+        size: {
+            default: "200px",
+            type: String,
+        },
     },
     data() {
         return {};
@@ -38,9 +44,9 @@ export default {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.floating/*:hover*/ {
+.floating:hover {
     animation-name: floating;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     /*margin-left: 30px;
@@ -49,13 +55,13 @@ export default {
 
 @keyframes floating {
     0% {
-        transform: translate(0, 0px);
+        transform: translate(0, -7px);
     }
     50% {
-        transform: translate(0, -10px);
+        transform: translate(0, 0px);
     }
     100% {
-        transform: translate(0, 0px);
+        transform: translate(0, -7px);
     }
 }
 </style>
