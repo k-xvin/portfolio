@@ -130,7 +130,7 @@ export default {
                 p.translate(canvasWidth / 2, canvasHeight / 2);
 
                 p.textSize(24);
-                p.text("happy birthday hannah", -150, -20);
+                // p.text("happy birthday hannah", -150, -20);
 
                 if (rotateCheckbox.checked()) {
                     p.rotate(p.millis() / 5000);

@@ -55,13 +55,13 @@ export default {
 
 @keyframes floating {
     0% {
-        transform: translate(0, -7px);
+        transform: translate(0, -2px);
     }
     50% {
-        transform: translate(0, 0px);
+        transform: translate(0, -7px);
     }
     100% {
-        transform: translate(0, -7px);
+        transform: translate(0, -2px);
     }
 }
 </style>

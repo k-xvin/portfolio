@@ -39,7 +39,8 @@ export default {
                 p.strokeWeight(4);
                 p.stroke(palette[4]);
                 let msgPosition = 0;
-                let message = "happybirthdayjeremyhavefunreadingthis :)))) ";
+                //let message = "happybirthdayjeremyhavefunreadingthis :)))) ";
+                let message = " ";
 
                 for (let x = 0; x < p.floor(canvasWidth / 150); x++) {
                     //polygon(x, x, 200, 8);
