@@ -6,7 +6,7 @@
             </v-container>
         </v-main>
         <video autoplay muted loop id="backgroundVideo">
-            <source src="centerwave_compressed.mp4" type="video/mp4" />
+            <source src="centerwave_compressed2.mp4" type="video/mp4" />
         </video>
     </v-app>
 </template>
@@ -20,7 +20,7 @@ export default {};
 // Prevents the scroll bar from flashing in on load
 // can't be scoped mode css
 #app {
-    
+
     overflow: hidden;
     // z-index: -1;
 }
