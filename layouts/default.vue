@@ -1,7 +1,7 @@
 <template>
     <v-app dark class="scanlines">
         <v-main id="main">
-            <v-app-bar dense color="rgb(155, 255, 255, 0.5)">
+            <!-- <v-app-bar dense color="rgb(155, 255, 255, 0.5)">
                 <a href="/" style="text-decoration: none">
                     <p class="neon my-auto">CRABB.CLUB</p>
                 </a>
@@ -9,8 +9,8 @@
                 <v-btn icon @click="overlay = !overlay">
                     <v-icon>mdi-heart</v-icon>
                 </v-btn>
-            </v-app-bar>
-            <v-overlay dark :value="overlay"> :) </v-overlay>
+            </v-app-bar> -->
+            <!-- <v-overlay dark :value="overlay"> :) </v-overlay> -->
             <v-container fluid>
                 <nuxt />
             </v-container>
@@ -37,7 +37,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .neon {
     font-size: x-large;
     color: #fff;
@@ -49,11 +48,13 @@ export default {
     background-position: center top;
     background-repeat: no-repeat;
     overflow: hidden;
+    // z-index: -1;
 }
 
 #main {
     // get everything else above the scanlines
     z-index: 10;
+    overflow: hidden;
 }
 
 // scanlines taken from https://codepen.io/meduzen/pen/zxbwRV because i am lazy and dumb
