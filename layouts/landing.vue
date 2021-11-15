@@ -6,7 +6,7 @@
             </v-container>
         </v-main>
         <video autoplay muted loop id="backgroundVideo">
-            <source src="centerwave_compressed3.mov" type="video/mp4"/>
+            <source src="centerwave_compressed4.mp4" type="video/mp4"/>
         </video>
     </v-app>
 </template>
