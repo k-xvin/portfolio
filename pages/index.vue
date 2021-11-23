@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="diagonal">
         <a id="art" href="/art"> &lt; ART &gt; </a>
         <a id="more" href="/more"> &lt; MORE &gt; </a>
     </div>
@@ -7,28 +7,33 @@
 
 <script>
 export default {
-    layout: "landing",
+    layout: "default",
 };
 </script>
 
 <style lang="scss" scoped>
-a {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 2.5em;
-    padding: 5vw 8vw 5vw 8vw;
-    text-decoration: none;
-    color: white;
+@import "../assets/variables.scss";
+#diagonal {
+    background: url("/diagonal.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 100%;
+    z-index: -15;
 }
 
 #art {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 5vw 8vw 5vw 8vw;
 }
 
 #more {
     position: fixed;
     bottom: 0;
     right: 0;
+    padding: 5vw 8vw 5vw 8vw;
 }
 </style>

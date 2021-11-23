@@ -28,17 +28,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 2.5em;
-    padding: 1vw 8vw 0vw 8vw;
-    text-decoration: none;
-    color: white;
-}
+
+@import "../../assets/variables.scss";
 
 #back {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1vw 8vw 0vw 8vw;
 }
 </style>
