@@ -1,14 +1,14 @@
 <template>
     <v-card
         elevation="2"
-        :width=200
-        :height=200
+        :width="200"
+        :height="200"
         class="floating ma-2"
         tile
         :href="link"
         target="_blank"
     >
-        <v-img :src="img" lazy-src="" min-width=200 min-height=200>
+        <v-img :src="img" lazy-src="" min-width="200" min-height="200">
             <!-- <h3 class="title">{{ title }}</h3>
             <v-card-subtitle> {{ desc }} </v-card-subtitle> -->
         </v-img>
