@@ -1,7 +1,7 @@
 <template>
     <div id="diagonal">
-        <a id="art" href="/art"> &lt; ART &gt; </a>
-        <a id="more" href="/more"> &lt; MORE &gt; </a>
+        <a id="art" href="/art"> [ ART ] </a>
+        <a id="more" href="/more"> [ MORE ] </a>
     </div>
 </template>
 

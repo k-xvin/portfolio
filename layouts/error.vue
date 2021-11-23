@@ -1,7 +1,7 @@
 <template>
     <div>
-        <a class= "errortext" v-if="error.statusCode === 404" href="/"> &lt; 404 &gt; </a>
-        <a class= "errortext" v-else href="/"> &lt; ERROR &gt; </a>
+        <a class= "errortext" v-if="error.statusCode === 404" href="/"> [ 404 ] </a>
+        <a class= "errortext" v-else href="/"> [ ERROR ] </a>
     </div>
 </template>
 

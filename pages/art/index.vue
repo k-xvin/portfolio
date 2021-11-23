@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a id="back" href="/"> &lt; BACK &gt; </a>
+        <a id="back" href="/"> [ BACK ] </a>
         <v-row no-gutters justify="center">
             <info-card
                 v-for="(item, index) in info"
