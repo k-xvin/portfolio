@@ -1,21 +1,16 @@
 {
-  "name": "crabb-club",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
-    "p5": "^0.10.2",
-    "vue": "^2.6.12",
-    "vue-p5": "^0.8.4"
-  },
-  "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.3"
-  }
+    "name": "crabb-club",
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "start": "nuxt start"
+    },
+    "dependencies": {
+        "nuxt": "^2.15.8"
+    },
+    "devDependencies": {
+        "sass": "^1.45.2",
+        "sass-loader": "^10.2.0"
+    }
 }
