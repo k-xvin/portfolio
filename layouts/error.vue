@@ -21,11 +21,11 @@ export default {
     background-size: cover;
     background-position: center;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .errortext {
@@ -34,5 +34,6 @@ export default {
     color: white;
     background-color: blue;
     padding: 1rem;
+    margin-top: 5%;
 }
 </style>
