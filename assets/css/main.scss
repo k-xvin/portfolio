@@ -7,3 +7,13 @@ body {
     margin: 0px;
     background-color: black;
 }
+
+.neon {
+    color: white;
+    filter: drop-shadow(0 0 2.5px);
+    transition: color 0.5s ease;
+}
+
+.neon:hover {
+    color: #97e2ff;
+}
