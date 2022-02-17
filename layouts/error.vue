@@ -4,6 +4,10 @@
             [ 404 ]
         </a>
         <a v-else class="errortext" href="/"> [ ERROR ] </a>
+
+        <a href="/">
+            <h1 class="neon flicker">[ BACK ]</h1>
+        </a>
     </div>
 </template>
 
@@ -24,8 +28,8 @@ export default {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 .errortext {
