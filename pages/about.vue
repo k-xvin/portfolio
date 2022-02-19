@@ -1,5 +1,5 @@
 <template>
-    <div className="container">
+    <div class="container">
         <h1 style="text-align: center"> im kevin </h1>
 
         <a href="/">

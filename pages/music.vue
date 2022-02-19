@@ -1,5 +1,5 @@
 <template>
-    <div className="container">
+    <div class="container">
         <h1 style="text-align: center"> coming soon</h1>
 
         <a href="/">

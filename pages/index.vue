@@ -1,5 +1,5 @@
 <template>
-    <div className="container">
+    <div class="container">
         <a href="/about">
             <h1 class="link-text neon flicker">[ ABOUT ]</h1>
         </a>
