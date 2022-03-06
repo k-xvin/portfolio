@@ -1,9 +1,9 @@
 <template>
-    <div class="error-page scanlines">
+    <div class="flex-col-center error-page scanlines">
         <a v-if="error.statusCode === 404" class="errortext" href="/">
-            [ 404 ]
+           <h1>[ 404 ]</h1>
         </a>
-        <a v-else class="errortext" href="/"> [ ERROR ] </a>
+        <a v-else class="errortext" href="/"><h1>[ ERROR ]</h1></a>
 
         <a href="/">
             <h1 class="link-text neon flicker">[ BACK ]</h1>
@@ -33,11 +33,11 @@ export default {
 }
 
 .errortext {
-    font-size: 3rem;
+    // font-size: 3rem;
     text-decoration: none;
     color: white;
     background-color: blue;
-    padding: 1rem;
-    margin-top: 5%;
+    // padding: 1rem;
+    // margin-top: 5%;
 }
 </style>

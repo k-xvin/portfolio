@@ -1,24 +1,16 @@
 html {
     font-family: "Consolas", Courier, monospace;
-    overflow-y: hidden;
     color: white;
 }
 
 body {
     margin: 0px;
-    background-color: black;
+    background-image: url("../beach2_compress.jpg");
 }
 
 .neon {
     color: rgb(255, 255, 255);
-    filter: drop-shadow(0px 0px 2px rgb(250, 201, 55));
-    transition: color 0.5s ease;
-}
-
-.neon:hover {
-    color: rgb(247, 181, 181);
-    filter: drop-shadow(0px 0px 3px);
-
+    // filter: drop-shadow(0px 0px 2px rgb(250, 201, 55));
 }
 
 a {
@@ -27,13 +19,24 @@ a {
 
 .link-text {
     color: white;
-    font-size: 3rem;
     text-align: center;
+    transition: color 0.5s ease;
 }
 
-.container {
+.link-text:hover {
+    color: white;
+    filter: drop-shadow(0px 0px 1px);
+}
+
+.pane {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.flex-col-center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+
