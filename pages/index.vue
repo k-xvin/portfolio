@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-col-center">
+    <div class="">
         <h1 class="neon pane title">Welcome</h1>
         <div class="pane">
             <p class="neon">I'm Kevin. I make all around creative tech stuff. Check out some of work below. </p>

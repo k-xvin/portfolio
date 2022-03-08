@@ -3,9 +3,14 @@
         <div class="card-img">
             <img  :src="img" />
         </div>
-        <!-- <div class="card-title">
-            <h1>{{ this.title }}</h1>
-        </div> -->
+
+        <div class="content">
+            <h1 class="title">{{ title }}</h1>
+            <div>
+                <a :href="link" class="link-text neon">[ VIEW ]</a>
+                <a :href="link" class="link-text neon">[ CODE ]</a>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -18,7 +23,9 @@ export default {
                 "https://cdn.discordapp.com/attachments/313820457256353794/853790365643702272/noisefield.gif",
             type: String,
         },
-        link: { default: "/title", type: String },
+        desc: { default: "description goes here", type: String },
+        link: { default: "https://github.com/k-xvin", type: String },
+        code: { default: "https://github.com/k-xvin", type: String },
     },
 };
 </script>
@@ -26,8 +33,7 @@ export default {
 <style lang="scss" scoped>
 .card {
     width: 200px;
-    height: 200px;
-    background-color: white;
+    margin: 1rem;
 }
 
 .card-title {
@@ -37,6 +43,9 @@ export default {
 .card-img {
     width: 100%;
     height: 100%;
+
+    width: 200px;
+    height: 200px;
 
     img {
         width: 100%;
