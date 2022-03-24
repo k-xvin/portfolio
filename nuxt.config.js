@@ -14,7 +14,7 @@ export default {
             { hid: 'description', name: 'description', content: 'a website dedicated to a dedicated website' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/crab.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: 'crab.ico' }
         ]
     },
 

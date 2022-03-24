@@ -1,16 +1,17 @@
 <template>
     <div class="card">
         <div class="card-img">
-            <img  :src="img" />
+            <img :src="img" />
         </div>
 
         <div class="content">
             <h1 class="title">{{ title }}</h1>
-            <div>
+            <!-- <div>
                 <a :href="link" class="link-text neon">[ VIEW ]</a>
                 <a :href="link" class="link-text neon">[ CODE ]</a>
-            </div>
+            </div> -->
         </div>
+
     </div>
 </template>
 
@@ -34,6 +35,8 @@ export default {
 .card {
     width: 200px;
     margin: 1rem;
+
+    cursor: pointer;
 }
 
 .card-title {
