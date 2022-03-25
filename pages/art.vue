@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <a href="/">
-            <h1 class="link-text neon flicker">[ BACK ]</h1>
+            <h1 class="link-text neon">[ BACK ]</h1>
         </a>
         <!-- <h1 style="text-align: center"> work in progress :)</h1> -->
         <div class="gallery">
@@ -22,6 +22,7 @@
         <div class="preview">
             <img :src="modalImage" />
         </div>
+         <a :href="modalLink" target="_blank"><h2 class="link-text neon">  [ CODE ] </h2></a> 
     </div>
        
 
@@ -38,6 +39,7 @@ export default {
             cards: cards.cards,
             modalImage: "https://cdn.discordapp.com/attachments/668689406617583646/865118126647803945/perlinfield.gif",
             modalTitle: "",
+            modalLink: "",
             showModal: false,
         }
     },
@@ -46,6 +48,7 @@ export default {
             this.showModal = true;
             this.modalImage = item.image;
             this.modalTitle = item.title;
+            this.modalLink = item.link;
             console.log("hello", item);
         },
         closeModal() {
@@ -95,14 +98,15 @@ export default {
     backdrop-filter: blur(5px);
 
     .preview {
-        max-width: 75%;
-        max-height: 75%;
+        max-width: 75vw;
+        max-height: 75vh;
 
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         img {
+            max-width: 100%;
             max-height: 100%;
         }
     }

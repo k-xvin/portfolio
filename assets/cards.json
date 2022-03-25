@@ -3,13 +3,13 @@
         {
             "title": "Square2",
             "description": "A perlin noisefield represented with some nice colors",
-            "link": "https://github.com/k-xvin",
+            "link": "https://github.com/k-xvin/image_gen/blob/master/src/square2.rs",
             "image": "https://cdn.discordapp.com/attachments/814706484070973501/955563943651336282/square2.gif"
         },
         {
             "title": "Square4",
             "description": "A perlin noisefield represented with some nice colors",
-            "link": "https://github.com/k-xvin",
+            "link": "https://github.com/k-xvin/image_gen/blob/master/src/square4.rs",
             "image": "https://cdn.discordapp.com/attachments/313820457256353794/956097321119145984/square4.gif"
         },
         {
