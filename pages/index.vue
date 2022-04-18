@@ -1,8 +1,8 @@
 <template>
     <div class="">
-        <h1 class="neon pane title">Welcome</h1>
+        <h1 class="neon pane title">it's the place with the things</h1>
         <div class="pane">
-            <p class="neon">I'm Kevin. I make all around creative tech stuff. Check out some of work below. </p>
+            <p class="neon">I'm Kevin. I make some stuff.</p>
             <a href="/art">
                 <h1 class="link-text neon">[ ART ]</h1>
             </a>
