@@ -5,7 +5,7 @@
         </div>
 
         <div class="content">
-            <h1 class="title">{{ title }}</h1>
+            <!-- <h1 class="title">{{ title }}</h1> -->
             <!-- <div>
                 <a :href="link" class="link-text neon">[ VIEW ]</a>
                 <a :href="link" class="link-text neon">[ CODE ]</a>
@@ -35,6 +35,8 @@ export default {
 .card {
     width: 200px;
     margin: 1rem;
+
+    // border: 3px solid #ccc;
 
     cursor: pointer;
 }

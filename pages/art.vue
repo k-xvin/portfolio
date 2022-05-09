@@ -22,7 +22,10 @@
         <div class="preview">
             <img :src="modalImage" />
         </div>
-         <a :href="modalLink" target="_blank"><h2 class="link-text neon">  [ CODE ] </h2></a> 
+        <div class="desc">
+            <a :href="modalImage" target="_blank"><h2 class="link-text neon">  [ SOURCE ] </h2></a> 
+            <a :href="modalLink" target="_blank"><h2 class="link-text neon">  [ CODE ] </h2></a> 
+        </div>
     </div>
        
 
@@ -110,7 +113,6 @@ export default {
             max-height: 100%;
         }
     }
-
 }
 
 </style>
