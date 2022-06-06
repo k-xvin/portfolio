@@ -1,10 +1,13 @@
 <template>
     <div class="container">
-        <h1 style="text-align: center"> coming soon</h1>
 
         <a href="/">
             <h1 class="link-text neon flicker">[ BACK ]</h1>
         </a>
+
+        <h2 style="text-align: center"> <a class="link-text" href="https://soundcloud.com/zarbobo" target="_blank">soundcloud</a></h2>
+        <h2 style="text-align: center"> <a class="link-text" href="https://www.youtube.com/channel/UCIQCQvnR4iwj72MhhLw4fqg" target="_blank">youtube</a></h2>
+
     </div>
 </template>
 
