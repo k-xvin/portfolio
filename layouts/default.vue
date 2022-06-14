@@ -1,11 +1,8 @@
 <template>
-    <div>
+    <div class="main-container">
         <div class="background" :style="{filter: randomFilter}"/>
-        <div class="main-container">
-            <Nuxt />
-        </div>
-        <!-- <div class="reroll-buttons" v-if="$route.name == 'index'"> -->
-        <div class="reroll-buttons pane">
+        <Nuxt />
+        <div class="reroll-buttons pane" v-if="$route.name == 'index'">
             <span class="reroll-button link-text" @click="this.clickReroll">[REROLL] <span v-if="clickCount > 4">{{clickCount}}</span> </span>
             <span v-if="clickCount > 100" class="reroll-button link-text" @click="this.reset">[RESET]</span>
             <span v-if="clickCount > 4" class="reroll-button link-text" @click="this.autoReroll">{{autoModeText}}</span>
@@ -134,6 +131,7 @@ export default {
     bottom: 5px;
     left: 50%;
     transform: translate(-50%);
+
     padding: 0.25rem 0.25rem 0.3rem;
     line-height: 1rem;
 
@@ -149,8 +147,9 @@ export default {
 }
 
 .main-container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
