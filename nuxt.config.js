@@ -14,7 +14,7 @@ export default {
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'title', name: 'title', content: "it's the place with the things" },
-            { hid: 'description', name: 'description', content: "I'm Kevin. I make some stuff." },
+            { hid: 'description', name: 'description', content: "im kevin. i make some stuff." },
             { hid: 'image', name: 'image', content: 'crab.ico' },
         ],
         link: [
