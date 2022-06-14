@@ -13,9 +13,9 @@ export default {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'title', name: 'title', content: "it's the place with the things"},
-            { hid: 'description', name: 'description', content: "I make some stuff. Check it out."},
-            { hid: 'image', name: 'image', content: 'https://cdn.discordapp.com/attachments/916989584620015619/986149196652507156/beach2_compress.jpg'},
+            { hid: 'title', name: 'title', content: "it's the place with the things" },
+            { hid: 'description', name: 'description', content: "I'm Kevin. I make some stuff." },
+            { hid: 'image', name: 'image', content: 'crab.ico' },
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: 'crab.ico' }
