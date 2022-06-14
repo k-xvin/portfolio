@@ -6,7 +6,7 @@
         <a v-else class="errortext" href="/"><h1>[ ERROR ]</h1></a>
 
         <a href="/">
-            <h1 class="link-text neon flicker">[ BACK ]</h1>
+            <h1 class="errortext link-text neon flicker">[ BACK ]</h1>
         </a>
     </div>
 </template>

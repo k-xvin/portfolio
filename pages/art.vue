@@ -69,7 +69,7 @@ export default {
 
     padding: 0 10% 0 10%;
 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     background-image: none;
 }
 
@@ -79,7 +79,7 @@ export default {
     justify-content: center;
     align-items: center;
 
-    gap: 5%;
+    // gap: 5%;
 }
 
 .modal {

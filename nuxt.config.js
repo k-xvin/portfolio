@@ -8,10 +8,14 @@ export default {
         htmlAttrs: {
             lang: 'en'
         },
+        // https://stackoverflow.com/a/54266944
+        // https://metatags.io/
         meta: [
-            // { charset: 'utf-8' },
-            // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            // { hid: 'description', name: 'description', content: 'a website dedicated to a dedicated website' }
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            { hid: 'title', name: 'title', content: "it's the place with the things"},
+            { hid: 'description', name: 'description', content: "I make some stuff. Check it out."},
+            { hid: 'image', name: 'image', content: 'https://cdn.discordapp.com/attachments/916989584620015619/986149196652507156/beach2_compress.jpg'},
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: 'crab.ico' }

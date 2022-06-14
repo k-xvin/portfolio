@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div>
         <h1 class="neon pane title">it's the place with the things</h1>
         <div class="pane">
             <p class="neon">I'm Kevin. I make some stuff.</p>
@@ -32,17 +32,14 @@ export default {
     padding: 1.5rem;
     max-width: 300px;
     text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .title {
-    // clip-path: polygon(20% 0%, 100% 0, 100% 0, 100% 50%, 80% 100%, 0 100%, 0 100%, 0 50%);
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 
     width: 100%;
 }
-
-
-
-
 
 </style>
