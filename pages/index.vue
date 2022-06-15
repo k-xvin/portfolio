@@ -27,10 +27,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.title {
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+// .title {
+//     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 
-    width: 100%;
-}
+//     width: 100%;
+// }
 
 </style>

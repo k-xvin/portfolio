@@ -2,12 +2,12 @@
     <div class="main-container">
         <div class="background" :style="{filter: randomFilter}"/>
         <Nuxt />
-        <div class="reroll-buttons pane" v-if="$route.name == 'index'">
+        <!-- <div class="reroll-buttons pane" v-if="$route.name == 'index'">
             <span class="reroll-button link-text" @click="this.clickReroll">[REROLL] <span v-if="clickCount > 4">{{clickCount}}</span> </span>
             <span v-if="clickCount > 100" class="reroll-button link-text" @click="this.reset">[RESET]</span>
             <span v-if="clickCount > 4" class="reroll-button link-text" @click="this.autoReroll">{{autoModeText}}</span>
             <span v-if="clickCount > 20" class="reroll-button link-text" @click="this.speedReroll">{{ speedModeText }}</span>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -16,84 +16,90 @@ export default {
 
     data(){
         return {
-            randomFilter: "blur(100px)",
+            randomFilter: "blur(25px) brightness(95%) contrast(95%) hue-rotate(315deg) invert(1) saturate(97%)",
 
             auto: null,
+
             clickCount: 0,
             speedEnabled: false,
             speedModeClickCount: 0,
         }
     },
-    beforeMount() {
-        this.randomizeFilter();
-    },
+    // beforeMount() {
+    //     // this.randomizeFilter();
+    // },
     beforeDestroy() {
         clearInterval(this.auto)
     },
-    computed: {
-        autoModeText() {
-            return `[AUTO ${this.auto ? "ENABLED" : "DISABLED"}]`
-        },
-        speedModeText() {
-            switch(this.speedModeClickCount){
-                case 0: 
-                    return "[SPEED MODE]"
-                case 1: 
-                    return "[ARE YOU SURE?]"
-                case 2: 
-                    return "[FLASHING LIGHTS WARNING]"
-                case 3: 
-                    return "[SERIOUSLY, ]"
-                case 4: 
-                    return "[I WARNED YOU]"
-                default: 
-                    return `[SPEED ${this.auto && this.speedEnabled ? "ENABLED" : "DISABLED"}]`
-            }
-        }
+    mounted(){
+        this.auto = setInterval(() => {
+            this.clickReroll()
+        }, 10000);
     },
+    // computed: {
+    //     autoModeText() {
+    //         return `[AUTO ${this.auto ? "ENABLED" : "DISABLED"}]`
+    //     },
+    //     speedModeText() {
+    //         switch(this.speedModeClickCount){
+    //             case 0: 
+    //                 return "[SPEED MODE]"
+    //             case 1: 
+    //                 return "[ARE YOU SURE?]"
+    //             case 2: 
+    //                 return "[FLASHING LIGHTS WARNING]"
+    //             case 3: 
+    //                 return "[SERIOUSLY, ]"
+    //             case 4: 
+    //                 return "[I WARNED YOU]"
+    //             default: 
+    //                 return `[SPEED ${this.auto && this.speedEnabled ? "ENABLED" : "DISABLED"}]`
+    //         }
+    //     }
+    // },
     methods: {
         clickReroll() {
             this.clickCount++;
             this.randomizeFilter();
         },
 
-        stopAuto(){
-            clearInterval(this.auto)
-            this.auto = null
-            this.speedEnabled = false;
-        },
+        // stopAuto(){
+        //     clearInterval(this.auto)
+        //     this.auto = null
+        //     this.speedEnabled = false;
+        // },
 
-        autoReroll() {
-            if(this.auto) {
-                this.stopAuto();
-            } else {
-                this.speedEnabled = false;
-                this.auto = setInterval(() => {
-                    this.clickReroll()
-                }, 1000);
-            }
-        },
+        // autoReroll() {
+        //     if(this.auto) {
+        //         this.stopAuto();
+        //     } else {
+        //         this.speedEnabled = false;
+        //         this.auto = setInterval(() => {
+        //             this.clickReroll()
+        //         }, 1000);
+        //     }
+        // },
 
-        speedReroll() {
-            this.speedModeClickCount++;
+        // speedReroll() {
+        //     this.speedModeClickCount++;
 
-            if(this.speedModeClickCount > 5 && !this.speedEnabled){
-                this.stopAuto();
-                this.speedEnabled = true;
-                this.auto = setInterval(() => {
-                    this.clickReroll()
-                }, 100);
-            }
-            else if(this.auto) {
-                this.stopAuto();
-            } 
-        },
+        //     if(this.speedModeClickCount > 5 && !this.speedEnabled){
+        //         this.stopAuto();
+        //         this.speedEnabled = true;
+        //         this.auto = setInterval(() => {
+        //             this.clickReroll()
+        //         }, 100);
+        //     }
+        //     else if(this.auto) {
+        //         this.stopAuto();
+        //     } 
+        // },
 
-        reset(){
-            this.clickCount = 0;
-            this.speedModeClickCount = 0;
-            this.stopAuto();
-        },
+        // reset(){
+        //     this.clickCount = 0;
+        //     this.speedModeClickCount = 0;
+        //     this.stopAuto();
+        // },
 
         randomizeFilter(){
             this.randomFilter = 
@@ -124,27 +130,29 @@ export default {
     height: 100%;
     width: 100%;
 
+    transition-property: filter;
+    transition: ease 10s;
 }
 
-.reroll-buttons{
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translate(-50%);
+// .reroll-buttons{
+//     position: absolute;
+//     bottom: 5px;
+//     left: 50%;
+//     transform: translate(-50%);
 
-    padding: 0.25rem 0.25rem 0.3rem;
-    line-height: 1rem;
+//     padding: 0.25rem 0.25rem 0.3rem;
+//     line-height: 1rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 3px;
-}
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     row-gap: 3px;
+// }
 
-.reroll-button{
-    cursor: pointer;
-    user-select: none;
-}
+// .reroll-button{
+//     cursor: pointer;
+//     user-select: none;
+// }
 
 .main-container {
     min-height: 100vh;
