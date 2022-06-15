@@ -7,6 +7,9 @@
         "start": "nuxt start"
     },
     "dependencies": {
+        "@fortawesome/free-brands-svg-icons": "^6.1.1",
+        "@fortawesome/free-solid-svg-icons": "^6.1.1",
+        "@nuxtjs/fontawesome": "^1.1.2",
         "nuxt": "^2.15.8"
     },
     "devDependencies": {

@@ -1,9 +1,10 @@
 <template>
     <div class="container">
+
         <a href="/">
-            <h1 class="link-text neon">[ BACK ]</h1>
+            <h1 class="link-text">[BACK]</h1>
         </a>
-        <!-- <h1 style="text-align: center"> work in progress :)</h1> -->
+
         <div class="gallery">
             <card 
                 v-for="(item, index) in cards"
@@ -12,22 +13,19 @@
                 :img="item.image"
                 :link="item.link"
                 @click.native="openModal(item)"
-            >
-                 
-            </card>
+            />
         </div>
 
-    <div class="modal" v-if="showModal" @click="closeModal">
-        <h1>{{ modalTitle }}</h1>
-        <div class="preview">
-            <img :src="modalImage" />
+        <div class="modal" v-if="showModal" @click="closeModal">
+            <h1>{{ modalTitle }}</h1>
+            <div class="preview">
+                <img :src="modalImage" />
+            </div>
+            <div class="desc">
+                <a :href="modalImage" target="_blank"><h2 class="link-text">  [SOURCE IMAGE] </h2></a> 
+                <a :href="modalLink" target="_blank"><h2 class="link-text">  [CODE] </h2></a> 
+            </div>
         </div>
-        <div class="desc">
-            <a :href="modalImage" target="_blank"><h2 class="link-text neon">  [ SOURCE ] </h2></a> 
-            <a :href="modalLink" target="_blank"><h2 class="link-text neon">  [ CODE ] </h2></a> 
-        </div>
-    </div>
-       
 
     </div>
 </template>
@@ -64,12 +62,12 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    height: 100%;
+    min-height: 100vh;
+    overflow: auto;
 
     padding: 0 10% 0 10%;
 
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: none;
 }
 
 .gallery {
@@ -77,8 +75,6 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    // gap: 5%;
 }
 
 .modal {

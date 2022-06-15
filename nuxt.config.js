@@ -24,5 +24,16 @@ export default {
 
     css: [
         '~/assets/css/main.scss',
-    ]
+    ],
+
+    buildModules: [
+        '@nuxtjs/fontawesome',
+    ],
+
+    fontawesome: {
+        icons: {
+            // solid: ['faHeart'],
+            brands: ['faGithub', 'faLinkedin', 'faYoutubeSquare'],
+        }
+    }
 }
