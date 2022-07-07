@@ -1,6 +1,12 @@
 {
     "cards": [
         {
+            "title": "7_6_22",
+            "description": "",
+            "link": "https://github.com/k-xvin/image_gen/blob/master/src/7_6_22.rs",
+            "image": "https://cdn.discordapp.com/attachments/916989584620015619/994497664240586762/7_6_22_limit.gif"
+        },
+        {
             "title": "7_5_22",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/7_5_22.rs",
