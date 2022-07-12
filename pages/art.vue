@@ -19,7 +19,8 @@
         <div class="modal" v-if="showModal" @click="closeModal">
             <h1>{{ modalTitle }}</h1>
             <div class="preview">
-                <img :src="modalImage" />
+                <iframe v-if="modalEmbed != null" :src="modalEmbed"></iframe>
+                <img v-else :src="modalImage" />
             </div>
             <div class="desc">
                 <a :href="modalImage" target="_blank"><h2 class="link-text">  [SOURCE IMAGE] </h2></a> 
@@ -41,6 +42,7 @@ export default {
             modalImage: "https://cdn.discordapp.com/attachments/668689406617583646/865118126647803945/perlinfield.gif",
             modalTitle: "",
             modalLink: "",
+            modalEmbed: "",
             showModal: false,
         }
     },
@@ -50,7 +52,7 @@ export default {
             this.modalImage = item.image;
             this.modalTitle = item.title;
             this.modalLink = item.link;
-            console.log("hello", item);
+            this.modalEmbed = item.embed;
         },
         closeModal() {
             this.showModal = false;
@@ -61,6 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .container {
     min-height: 100vh;
     overflow: auto;
@@ -107,7 +110,12 @@ export default {
             max-width: 100%;
             max-height: 100%;
         }
+        iframe {
+            min-width: 70vw;
+            min-height: 70vh;
+        }
     }
+
 }
 
 </style>
