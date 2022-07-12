@@ -3,118 +3,154 @@
         {
             "title": "7_10_22",
             "description": "",
-            "link": "https://editor.p5js.org/k-xvin/full/xXdWza39k",
-            "image": "https://cdn.discordapp.com/attachments/916989584620015619/995874259597537421/unknown.png",
+            "link": "https://openprocessing.org/sketch/1612733",
+            "image": "7_10_22.png",
+            "cdn": "https://cdn.discordapp.com/attachments/916989584620015619/995874259597537421/unknown.png",
             "embed": "https://openprocessing.org/sketch/1612733/embed"
         },
         {
             "title": "7_6_22",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/7_6_22.rs",
-            "image": "https://cdn.discordapp.com/attachments/916989584620015619/994497664240586762/7_6_22_limit.gif"
+            "image": "7_6_22.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/916989584620015619/994497664240586762/7_6_22_limit.gif"
+
         },
         {
             "title": "7_5_22",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/7_5_22.rs",
-            "image": "https://cdn.discordapp.com/attachments/916989584620015619/993966508801789952/7_5_22_limit_1loop.gif"
+            "image": "7_5_22.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/916989584620015619/993966508801789952/7_5_22_limit_1loop.gif"
+
         },
         {
             "title": "7_4_22",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/7_4_22.rs",
-            "image": "https://cdn.discordapp.com/attachments/916989584620015619/993686515727216680/7_4_22_limit_noloop.gif"
+            "image": "7_4_22.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/916989584620015619/993686515727216680/7_4_22_limit_noloop.gif"
+
         },
         {
             "title": "7_2_22",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/7_2_22.rs",
-            "image": "https://cdn.discordapp.com/attachments/916989584620015619/992937109067407380/7_2_22_limit.gif"
+            "image": "7_2_22.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/916989584620015619/992937109067407380/7_2_22_limit.gif"
+
         },
         {
             "title": "6_18_22",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/6_18_22.rs",
-            "image": "https://cdn.discordapp.com/attachments/916989584620015619/987873020397895750/6_18_22_limit.gif"
+            "image": "6_18_22.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/916989584620015619/987873020397895750/6_18_22_limit.gif"
+
         },
         {
             "title": "6_16_22",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/6_16_22.rs",
-            "image": "https://cdn.discordapp.com/attachments/916989584620015619/987283687739645952/6_16_22.gif"
+            "image": "6_16_22.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/916989584620015619/987283687739645952/6_16_22.gif"
+
         },
         {
             "title": "Square Cloud",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/square2.rs",
-            "image": "https://cdn.discordapp.com/attachments/313820457256353794/973021240019259402/sketches.SquareCloud-2022-05-08-17.38.34.gif"
+            "image": "squarecloud.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/313820457256353794/973021240019259402/sketches.SquareCloud-2022-05-08-17.38.34.gif"
+
         },
         {
             "title": "Square2",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/square2.rs",
-            "image": "https://cdn.discordapp.com/attachments/814706484070973501/955563943651336282/square2.gif"
+            "image": "square2.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/814706484070973501/955563943651336282/square2.gif"
+
         },
         {
             "title": "Square4",
             "description": "",
             "link": "https://github.com/k-xvin/image_gen/blob/master/src/square4.rs",
-            "image": "https://cdn.discordapp.com/attachments/313820457256353794/956097321119145984/square4.gif"
+            "image": "square4.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/313820457256353794/956097321119145984/square4.gif"
+
         },
         {
             "title": "Perlin Noisefield",
             "description": "A perlin noisefield represented with some nice colors",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/668689406617583646/865118126647803945/perlinfield.gif"
+            "image": "perlinfield.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/668689406617583646/865118126647803945/perlinfield.gif"
+
         },
         {
             "title": "Sin Circle",
             "description": "",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/668689406617583646/864728008036319242/sincircle.gif"
+            "image": "sincircle.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/668689406617583646/864728008036319242/sincircle.gif"
+
         },
         {
             "title": "Midnight Flower",
             "description": "",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/668689406617583646/864729531294547968/midnight.gif"
+            "image": "midnight.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/668689406617583646/864729531294547968/midnight.gif"
+
         },
         {
             "title": "Octagon",
             "description": "",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/313820457256353794/892922889647587328/octagon.png"
+            "image": "octagon.png",
+            "cdn": "https://cdn.discordapp.com/attachments/313820457256353794/892922889647587328/octagon.png"
+            
         },
 
         {
             "title": "Perlin Cave",
             "description": "",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/313820457256353794/853789056541917244/perlincave.gif"
+            "image": "perlincave.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/313820457256353794/853789056541917244/perlincave.gif"
+
         },
         {
             "title": "Perlin Wave",
             "description": "",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/313820457256353794/854844951556259840/perlinwave.gif"
+            "image": "perlinwave.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/313820457256353794/854844951556259840/perlinwave.gif"
+
         },
         {
             "title": "Rectangles",
             "description": "",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/313820457256353794/854843948162088980/rectangles.gif"
+            "image": "rectangles.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/313820457256353794/854843948162088980/rectangles.gif"
+
         },
         {
             "title": "Triangles2",
             "description": "",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/313820457256353794/854845428441022464/triangles2.gif"
+            "image": "triangles2.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/313820457256353794/854845428441022464/triangles2.gif"
+
         },
         {
             "title": "Ribbon",
             "description": "",
             "link": "https://github.com/k-xvin",
-            "image": "https://cdn.discordapp.com/attachments/313820457256353794/854846319508455474/ribbon.gif"
+            "image": "ribbon.gif",
+            "cdn": "https://cdn.discordapp.com/attachments/313820457256353794/854846319508455474/ribbon.gif"
         }
     ]
 }

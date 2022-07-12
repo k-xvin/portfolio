@@ -11,6 +11,7 @@
                 :key="index"
                 :title="item.title"
                 :img="item.image"
+                :cdn="item.cdn"
                 :link="item.link"
                 @click.native="openModal(item)"
             />
@@ -19,11 +20,15 @@
         <div class="modal" v-if="showModal" @click="closeModal">
             <h1>{{ modalTitle }}</h1>
             <div class="preview">
+                 <!-- embed -->
                 <iframe v-if="modalEmbed != null" :src="modalEmbed"></iframe>
-                <img v-else :src="modalImage" />
+                 <!-- native -->                      
+                <img v-else-if="modalImage != null" :src="require(`~/assets/art/${modalImage}`)" />
+                <!-- cdn -->       
+                <img v-else :src="modalCdn" />                                                      
             </div>
             <div class="desc">
-                <a :href="modalImage" target="_blank"><h2 class="link-text">  [SOURCE IMAGE] </h2></a> 
+                <!-- <a :href="modalImage" target="_blank"><h2 class="link-text">  [SOURCE IMAGE] </h2></a>  -->
                 <a :href="modalLink" target="_blank"><h2 class="link-text">  [CODE] </h2></a> 
             </div>
         </div>
@@ -39,10 +44,11 @@ export default {
     data() {
         return {
             cards: cards.cards,
-            modalImage: "https://cdn.discordapp.com/attachments/668689406617583646/865118126647803945/perlinfield.gif",
-            modalTitle: "",
-            modalLink: "",
-            modalEmbed: "",
+            modalImage: null,
+            modalTitle: null,
+            modalLink: null,
+            modalCdn: "https://cdn.discordapp.com/attachments/668689406617583646/865118126647803945/perlinfield.gif",
+            modalEmbed: null,
             showModal: false,
         }
     },
@@ -52,6 +58,7 @@ export default {
             this.modalImage = item.image;
             this.modalTitle = item.title;
             this.modalLink = item.link;
+            this.modalCdn = item.cdn;
             this.modalEmbed = item.embed;
         },
         closeModal() {

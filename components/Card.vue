@@ -1,17 +1,10 @@
 <template>
     <div class="card">
         <div class="card-img">
-            <img :src="img" />
+            <!-- prioritize native over cdn -->
+            <img v-if="img!=null" :src="require(`~/assets/art/${img}`)" />
+            <img v-else :src="cdn" />
         </div>
-
-        <div class="content">
-            <!-- <h1 class="title">{{ title }}</h1> -->
-            <!-- <div>
-                <a :href="link" class="link-text neon">[ VIEW ]</a>
-                <a :href="link" class="link-text neon">[ CODE ]</a>
-            </div> -->
-        </div>
-
     </div>
 </template>
 
@@ -19,11 +12,8 @@
 export default {
     props: {
         title: { default: "title", type: String },
-        img: {
-            default:
-                "https://cdn.discordapp.com/attachments/313820457256353794/853790365643702272/noisefield.gif",
-            type: String,
-        },
+        img: { default: null, type: String },
+        cdn: { default: null, type: String },
         desc: { default: "description goes here", type: String },
         link: { default: "https://github.com/k-xvin", type: String },
         code: { default: "https://github.com/k-xvin", type: String },
