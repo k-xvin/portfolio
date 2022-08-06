@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="pane title">it's the place with the things</h1>
-        <div class="pane nav">
+        <div class="pane">
             <p>im kevin. i make some stuff.</p>
             <a href="/art">
                 <h1 class="link-text">[ART]</h1>
@@ -35,6 +35,10 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+
+.title {
+    margin: 0;
+}
 
 .social-icons {
     display: flex;
