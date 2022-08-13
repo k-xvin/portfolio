@@ -17,7 +17,7 @@ export default {
             { hid: 'description', name: 'description', content: "im kevin. i make some stuff." },
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: 'crab.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
         ]
     },
 
