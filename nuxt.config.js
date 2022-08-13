@@ -15,7 +15,6 @@ export default {
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'title', name: 'title', content: "it's the place with the things" },
             { hid: 'description', name: 'description', content: "im kevin. i make some stuff." },
-            { hid: 'image', name: 'image', content: 'crab.ico' },
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: 'crab.ico' }
@@ -24,6 +23,10 @@ export default {
 
     css: [
         '~/assets/css/main.scss',
+    ],
+    
+    modules: [
+        '@nuxt/content'
     ],
 
     buildModules: [

@@ -1,0 +1,9 @@
+---
+title: My first Blog Post
+description: Learning how to use @nuxt/content to create a blog
+img: first-blog-post.jpg
+alt: my first blog post
+slug: first-post-2
+---
+# helloey
+this is a content woooo
