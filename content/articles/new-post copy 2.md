@@ -1,9 +1,8 @@
 ---
 title: yum
 description: Learning how to use @nuxt/content to create a blog
-img: first-blog-post.jpg
+img: https://cdn.discordapp.com/attachments/916989584620015619/1007160161179283516/unknown.png
 alt: my first blog post
-slug: new-post
 ---
 # helloey
 this is a content different~~~
