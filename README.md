@@ -1,3 +1,7 @@
+# Archived?
+I've migrated my portfolio website to [my portfolio-11ty repo](https://github.com/k-xvin/portfolio-11ty).
+
+---
 # It's my personal website
 I put my art here
 
